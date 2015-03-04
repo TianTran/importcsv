@@ -1,0 +1,13 @@
+.box-list{
+	overflow: scroll;
+	height: 500px;
+}
+input{
+	margin-bottom: 20px;
+}
+.succeed{
+	color: blue;
+}
+.error{
+	color: red;
+}

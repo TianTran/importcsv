@@ -1,0 +1,65 @@
+<div class="container">
+  <div class="header">
+    <h3>Import a CSV File</h3>
+    <h5 class="succeed"><%= flash[:notice] %></h5>
+    <h5 class="error"><%= flash[:alert] %></h5>
+      <%= form_tag import_users_path, multipart: true do %>
+        <%= file_field_tag :file %>
+        <%= submit_tag "Import CSV" %>
+      <% end %>
+  </div>
+  <div class="box-list">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>userID</th>
+          <th>latitude</th>
+          <th>longitude</th>
+          <th>smoker</th>
+          <th>drink_level</th>
+          <th>dress_preference</th>
+          <th>ambience</th>
+          <th>transport</th>
+          <th>marital_status</th>
+          <th>hijos</th>
+          <th>birth_year</th>
+          <th>interest</th>
+          <th>personality</th>
+          <th>religion</th>
+          <th>activity</th>
+          <th>color</th>
+          <th>weight</th>
+          <th>budget</th>
+          <th>height</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @users.each do |user| %>
+          <tr>
+            <td><%= user.id %></td>
+            <td><%= user.userID %></td>
+            <td><%= user.latitude %></td>
+            <td><%= user.longitude %></td>
+            <td><%= user.smoker %></td>
+            <td><%= user.drink_level %></td>
+            <td><%= user.dress_preference %></td>
+            <td><%= user.ambience %></td>
+            <td><%= user.transport %></td>
+            <td><%= user.marital_status %></td>
+            <td><%= user.hijos %></td>
+            <td><%= user.birth_year %></td>
+            <td><%= user.interest %></td>
+            <td><%= user.personality %></td>
+            <td><%= user.religion %></td>
+            <td><%= user.activity %></td>
+            <td><%= user.color %></td>
+            <td><%= user.weight %></td>
+            <td><%= user.budget %></td>
+            <td><%= user.height %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
