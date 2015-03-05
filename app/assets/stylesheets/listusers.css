@@ -11,3 +11,30 @@ input{
 .error{
 	color: red;
 }
+table.table-striped thead tr th{
+	background-color: #33CCFF;
+	border-right: 1px solid #fff;
+	cursor: pointer;
+	font-weight: bold;
+}
+th {
+	padding-right: 25px !important;
+}
+th.header {
+	background-image: url("bg.gif");
+	background-repeat: no-repeat;
+	background-position: right; 
+
+}
+th.headerSortUp {
+	background-image: url("asc.gif") !important;
+	background-repeat: no-repeat;
+	background-color: #3399FF !important;
+	background-position: right;
+}
+th.headerSortDown {
+	background-image: url("desc.gif");
+	background-color: #3399FF !important;
+	background-repeat: no-repeat;
+	background-position: right;
+}
