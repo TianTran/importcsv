@@ -21,19 +21,19 @@ th {
 	padding-right: 25px !important;
 }
 th.header {
-	background-image: image-url("bg.gif");
+	background-image: asset-data-url("bg.gif");
 	background-repeat: no-repeat;
 	background-position: right; 
 
 }
 th.headerSortUp {
-	background-image: image-url("asc.gif") !important;
+	background-image: asset-data-url("asc.gif") !important;
 	background-repeat: no-repeat;
 	background-color: #3399FF !important;
 	background-position: right;
 }
 th.headerSortDown {
-	background-image: image-url("desc.gif");
+	background-image: asset-data-url("desc.gif");
 	background-color: #3399FF !important;
 	background-repeat: no-repeat;
 	background-position: right;
