@@ -46,4 +46,5 @@ group :development, :test do
   gem 'spring'
   gem 'rspec-rails', '~> 3.0'
 end
-gem "twitter-bootstrap-rails"
+gem 'twitter-bootstrap-rails'
+gem 'activerecord-import'

@@ -5,10 +5,10 @@
 input{
 	margin-bottom: 20px;
 }
-.succeed{
+.msgsucceed{
 	color: blue;
 }
-.error{
+.msgerror{
 	color: red;
 }
 table.table-striped thead tr th{
