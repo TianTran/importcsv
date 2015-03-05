@@ -21,19 +21,19 @@ th {
 	padding-right: 25px !important;
 }
 th.header {
-	background-image: asset-data-url("bg.gif");
+	background-image: url("/images/bg.gif");
 	background-repeat: no-repeat;
 	background-position: right; 
 
 }
 th.headerSortUp {
-	background-image: asset-data-url("asc.gif") !important;
+	background-image: url("/images/asc.gif") !important;
 	background-repeat: no-repeat;
 	background-color: #3399FF !important;
 	background-position: right;
 }
 th.headerSortDown {
-	background-image: asset-data-url("desc.gif");
+	background-image: url("/images/desc.gif");
 	background-color: #3399FF !important;
 	background-repeat: no-repeat;
 	background-position: right;
