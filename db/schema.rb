@@ -11,30 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150303155440) do
+ActiveRecord::Schema.define(version: 20150316032703) do
 
   create_table "users", force: :cascade do |t|
     t.string   "userID"
-    t.float    "latitude"
-    t.float    "longitude"
-    t.string   "smoker"
-    t.string   "drink_level"
-    t.string   "dress_preference"
-    t.string   "ambience"
-    t.string   "transport"
-    t.string   "marital_status"
-    t.string   "hijos"
     t.integer  "birth_year"
-    t.string   "interest"
-    t.string   "personality"
-    t.string   "religion"
-    t.string   "activity"
     t.string   "color"
     t.integer  "weight"
-    t.string   "budget"
     t.float    "height"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "drink_leve"
+    t.boolean  "smoker"
+    t.string   "phone"
+    t.string   "addres"
+    t.string   "email"
+    t.string   "name"
   end
 
 end
